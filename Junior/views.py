@@ -7,3 +7,5 @@ def home(request):
 def about(request):
     return render(request, template_name='home/about.html')
 
+def portfolio(request):
+    return render(request, template_name='home/portfolio.html')
