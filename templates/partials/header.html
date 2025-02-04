@@ -1,38 +1,26 @@
 {% load static %}
-<header class="header sticky-bar bg-gray-900">
-      <div class="container">
-        <div class="main-header">
-          <div class="header-logo"><a class="d-flex" href="base.html"><img class="logo-night" alt="GenZ" src="{% static 'assets/imgs/template/logo.png' %}"><img class="d-none logo-day" alt="GenZ" src="assets/imgs/template/logo-day.svg"></a></div>
-          <div class="header-nav">
-            <nav class="nav-main-menu d-none d-xl-block">
-              <ul class="main-menu">
-                <li class="menu-item"><a class="active" href="base.html">Home</a>
-                <li class="menu-item"><a class="color-gray-500" href="page-about.html">About Me</a>
-                </li>
-                <li class="menu-item"><a class="color-gray-500" href="portfolio.html">Portfolio</a>
-                <li class="menu-item"><a class="color-gray-500" href="#">Category</a>
-                </li>
-                <li><a class="color-gray-500" href="page-contact.html">Contact</a></li>
-              </ul>
-            </nav>
-            <div class="burger-icon burger-icon-white"><span class="burger-icon-top"></span><span class="burger-icon-mid"></span><span class="burger-icon-bottom"></span></div>
-          </div>
-          <div class="header-right text-end"><a class="btn btn-search" href="#"></a>
-            <div class="form-search p-20">
-              <form action="#">
-                <input class="form-control" type="text" placeholder="Search">
-                <input class="btn-search-2" type="submit" value="">
-              </form>
-              <div class="popular-keywords text-start mt-20">
-                <p class="mb-10 color-white">Popular tags:</p><a class="color-gray-600 mr-10 font-xs" href="#"># Travel,</a><a class="color-gray-600 mr-10 font-xs" href="#"># Tech,</a><a class="color-gray-600 mr-10 font-xs" href="#"># Movie</a><a class="color-gray-600 mr-10 font-xs" href="#"># Lifestyle</a><a class="color-gray-600 mr-10 font-xs" href="#"># Sport</a>
-              </div>
-            </div>
-            <div class="switch-button">
-              <div class="form-check form-switch">
-                <input class="form-check-input" id="flexSwitchCheckChecked" type="checkbox" role="switch" checked="">
-              </div>
-            </div><a class="btn btn-linear d-none d-sm-inline-block hover-up hover-shadow" href="page-login.html">Subscribe</a>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#0E0E0E">
+    <meta name="template-color" content="#0E0E0E">
+    <meta name="description" content="Index page">
+    <meta name="keywords" content="index, page">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/imgs/template/favicon.svg' %}">
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+    <title>{% block title  %} Sakkhar - Personal Blog {% endblock %}</title>
+  </head>
+  <body>
+    <div id="preloader-active">
+      <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+          <div class="text-center"><img class="mb-10" src="{% static 'assets/imgs/template/favicon.svg' %}" alt="GenZ">
+            <div class="preloader-dots"></div>
           </div>
         </div>
       </div>
-    </header>
+    </div>
